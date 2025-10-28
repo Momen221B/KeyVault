@@ -1,0 +1,3052 @@
+:root {
+  --color-dark: #222831;
+  --color-dark-gray: #393e46;
+  --color-light-gray: #eeeeee;
+  --color-light: #f9f7f7;
+  --color-gray: gray;
+  --color-white: #fff;
+  --color-semi-transparent-black: rgba(0, 0, 0, 0.2);
+
+  --color-blue: #3f72af;
+  --color-blue-dark: #112d4e;
+  --color-light-blue: #00adb5;
+
+  --color-light-semi-transparent-white: rgba(255, 255, 255, 0.16);
+  --color-transparent-white: rgba(255, 255, 255, 0.3);
+  --color-light-brown: rgba(85, 37, 19, 0.08);
+  --color-muted-blue: #a6e3e9;
+  --color-soft-orange: #ff6f61;
+  --color-dark-brown: #222831;
+  --color-warm-gray: #393e46;
+  --color-soft-peach: #ff9a8b;
+
+  --color-light-gray-transparent: rgba(218, 218, 218, 0.67);
+  --color-dark-slate: #2c3c36;
+  --color-vibrant-purple: #3f72af;
+
+  --color-muted-brown: rgba(82, 68, 58, 0.81);
+  --color-dark-grayish-brown: #393e46;
+  --color-medium-gray: #a2a2a2;
+  --color-slightly-dark-gray: rgba(99, 102, 105, 0.67);
+  --color-deep-green: #22322d;
+  --color-deep-slate: #2c3c36;
+  --color-white: rgba(255, 255, 255, 1);
+  --color-off-white: rgba(255, 255, 255, 0.98);
+  --color-light-semi-transparent-white: rgba(255, 255, 255, 0.16);
+  --color-light-cyan: #a6e3e9;
+  --color-bright-orange: #ff6f61;
+  --color-soft-orange: #ff9a8b;
+  --color-yellow-dark: #112d4e;
+  --color-yellow-light: #dbe2ef;
+  --color-light-background: #f9f7f7;
+  --color-grayish-background: #e8e8e8;
+
+  --main-color: #3f72af;
+  --secondary-color: #00adb5;
+  --header-color: #2c3c36;
+  --para-color: #222831;
+  --section-background: #a6e3e9;
+}
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #7e6e45;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #1d1d1d;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color-grayish-background);
+
+  border-radius: 5px;
+}
+
+/* body,
+html,
+section {
+    background: #F7F7F7;
+} */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Readex Pro", sans-serif;
+  background-color: var(--color-white);
+  direction: ltr;
+}
+
+a {
+  text-decoration-line: none;
+  color: var(--color-white);
+}
+
+i {
+  color: #000000;
+}
+
+header#header .container {
+  padding: 0;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "Readex Pro";
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.big-main-title {
+  color: #000;
+  text-align: center;
+  font-family: "Readex Pro";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+.accordion-butn {
+  background-color: transparent;
+}
+
+nav.navbar.container.navbar-expand-lg {
+  padding: 0;
+  margin: 0;
+}
+
+header#header {
+  background: transparent;
+  padding: 20px 0px;
+}
+
+.bottom-header .logo .logo-img {
+  width: 35px;
+}
+
+.bottom-header .logo a {
+  color: #fff;
+  text-align: left;
+  font-family: "Readex Pro";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 900;
+}
+
+.bottom-header ul li a {
+  padding: 10px 4px 8px;
+  text-decoration-line: none;
+  transition-duration: 300ms;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  color: #fff;
+  text-align: left;
+  font-family: "Readex Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.bottom-header ul li a:hover {
+  box-shadow: 0px -0.9em 0px 0px rgba(9, 106, 61, 0.06) inset;
+}
+
+.bottom-header .head-btn {
+  max-width: 100%;
+}
+
+.bottom-header .head-btn a i {
+  font-weight: 600;
+  color: rgba(255, 255, 255, 1);
+}
+
+.bottom-header .head-btn a:hover {
+  transform: translateY(-10px);
+}
+
+@media only screen and (max-width: 767px) {
+  nav.navbar.container.navbar-expand-lg .container {
+    padding: 0;
+  }
+
+  .bottom-header .logo .logo-img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .bottom-header .logo a {
+    font-size: 17px;
+  }
+}
+
+#main {
+  background: #121212;
+}
+
+@media (min-width: 767px) {
+  #main {
+    overflow: visible;
+  }
+}
+
+/* general  */
+@media (max-width: 992px) {
+  header#header .container {
+    padding: 0;
+  }
+
+  header#header {
+    padding: 12px 12px;
+  }
+
+  .navbar-collapse {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100%;
+    width: 250px;
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+    transition: left 0.3s ease-in-out;
+    z-index: 1000;
+  }
+
+  div#navbarSupportedContent #x-checkout-btn {
+    margin: 0;
+    width: 85%;
+    min-width: unset;
+  }
+
+  .navbar-collapse.show {
+    left: 0;
+  }
+
+  .navbar-collapse::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    background-image: url("https://files.easy-orders.net/1748522274050285495.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  #navbarSupportedContent > ul {
+    padding: 0;
+    margin: 0 !important;
+  }
+
+  .navbar-collapse.show {
+    left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 86px 0;
+    gap: 15px;
+    background-color: #121212fc;
+  }
+
+  .head-btn {
+    width: 83%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #header .bottom-head .nav-item a {
+    padding: 0;
+    margin: 0;
+  }
+
+  #navbarSupportedContent > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    align-items: center;
+  }
+
+  #main .carousel-indicators li img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+  }
+
+  #hero .middle {
+    padding: 0;
+    gap: 25px;
+  }
+
+  #hero {
+    overflow: hidden;
+  }
+
+  #sliderContainer .countdown.d-flex .countdown-item {
+    font-size: 12px;
+  }
+}
+
+#hero .right-side {
+  width: 48%;
+  float: left;
+  position: sticky;
+  top: 10px;
+  height: fit-content;
+  padding: 0;
+}
+
+#hero .carousel {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+#hero .carousel .carousel-inner {
+  border-radius: 0;
+  max-width: 100%;
+  max-height: 200vh;
+}
+
+#hero .carousel .carousel-inner .carousel-item {
+  height: 100%;
+  width: 100%;
+}
+
+#hero .carousel .carousel-inner .carousel-item img {
+  max-height: 100%;
+  height: 420px;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+#hero .carousel .carousel-inner .carousel-item img:hover {
+  cursor: zoom-in;
+  transform: scale(1.3);
+}
+
+#hero .carousel-indicators::-webkit-scrollbar {
+  width: 5px;
+
+  height: 10px;
+}
+
+#hero .carousel-indicators::-webkit-scrollbar-thumb {
+  background-color: var(--color-medium-gray);
+
+  border-radius: 20px;
+}
+
+#hero .carousel-indicators::-webkit-scrollbar-track {
+  background-color: var(--color-grayish-background);
+
+  border-radius: 5px;
+}
+
+#hero .carousel-indicators li.thumbnail {
+  width: auto;
+  height: 80px;
+  border-radius: 10px;
+  color: transparent;
+}
+
+#hero .carousel-indicators li.thumbnail:not(.active) {
+  opacity: 1;
+}
+
+#hero .carousel-indicators li img {
+  height: 100%;
+  width: 100px;
+  border-radius: 0;
+  max-width: unset;
+}
+
+.incourge-checkout-form {
+  font-family: "Readex Pro";
+  font-weight: 400;
+  line-height: 160%;
+  color: rgba(5, 24, 20, 1);
+  font-size: 16px;
+  text-align: center;
+}
+
+.form-title-box {
+  max-width: 100%;
+  margin: 20px auto;
+  display: flex;
+}
+
+.form-title-top-line,
+.form-title-bottom-line {
+  height: 1px;
+  background-color: rgba(206, 214, 211, 1);
+  width: 12%;
+  margin: 10px auto;
+}
+
+.form-title-content {
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+  text-align: center;
+}
+
+.form-title-text {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Readex Pro", sans-serif;
+  line-height: 1.15;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.one-line-first-small-features {
+  display: flex;
+  gap: 5px;
+  align-items: flex-start;
+}
+
+.one-line-first-small-features h3 {
+  text-align: left;
+  font-family: "Tajawal";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  color: #494949;
+}
+
+.one-line-first-small-features h3 span {
+  text-align: left;
+  font-family: Tajawal;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  color: #494949;
+}
+
+.one-line-first-small-features img {
+  height: 20px;
+}
+
+@media (max-width: 767px) {
+  .form-title-text {
+    font-size: 16px;
+  }
+}
+
+#hero div#prices2 .product-peices1 {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+
+#main .left-side .main-content div#discountPercent {
+  background: #ffffff;
+  font-weight: 900;
+  padding: 10px 15px;
+  margin: 0;
+  color: #1a1a1a;
+  text-align: left;
+  font-family: "Readex Pro";
+  font-size: 12px;
+  font-style: normal;
+  line-height: 1;
+}
+
+#hero .left-side .main-content .discount h4,
+.discount h4 {
+  color: #fff;
+  text-align: left;
+  font-family: "Readex Pro";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.choosing form label {
+  color: var(--Prirmitaves-Colors-Base-Black, #fff);
+  text-align: left;
+  font-family: "Noto Kufi Arabic";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.product-first-stars {
+  gap: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1a1a1a;
+  text-align: left;
+  font-family: "Readex Pro";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.product-first-stars i {
+  color: #f7ba1e;
+}
+
+@media (max-width: 992px) {
+  .product-first-stars {
+    font-size: 12px;
+  }
+}
+
+.product-container-first-stars a {
+  color: #364946;
+  text-align: left;
+  font-family: "Readex Pro";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@media (min-width: 767px) {
+  #hero .middle {
+    justify-content: space-between;
+  }
+}
+
+/* start left side */
+#hero .left-side {
+  width: 50%;
+  float: left;
+  padding: 0;
+}
+
+#main .left-side .main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (max-width: 767px) {
+  #main .left-side .main-content {
+    gap: 15px;
+  }
+}
+
+#hero .left-side .main-content .title h1 {
+  color: #fff;
+  text-align: left;
+  font-family: "Readex Pro";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+#hero .left-side .main-content .discount p,
+.discount p {
+  color: #f0f0f0;
+  text-align: left;
+  font-family: "Readex Pro";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.discount .percentage {
+  font-size: 14px;
+  font-family: "Readex Pro";
+  border-style: solid;
+  border-width: 0px;
+  border-radius: 6px;
+  color: #fff;
+  background-color: #1a1a1a;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 7px;
+  padding-left: 7px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}
+
+#hero .left-side .main-content .choosing .title-box p {
+  line-height: 140%;
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+}
+
+#hero .left-side .main-content .form-container form .input-container {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 6px;
+  border-style: solid;
+  border-color: rgba(185, 200, 213, 1);
+  border-width: 1px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+#hero .left-side .main-content .form-container form .input-container img {
+  border-style: solid;
+  border-width: 0px;
+  height: 40px;
+  background-color: rgba(231, 233, 238, 0.5);
+  padding: 5px;
+  border-radius: 8px;
+}
+
+#hero
+  .left-side
+  .main-content
+  .form-container
+  form
+  .input-container
+  .input-box {
+  width: 100%;
+}
+
+#hero
+  .left-side
+  .main-content
+  .form-container
+  form
+  .input-container
+  .input-box
+  input {
+  font-family: "Readex Pro";
+  font-weight: 400;
+  color: var(--color-dark-grayish-brown);
+  border-radius: 8px;
+  height: 100%;
+  font-size: 15px;
+  width: 100%;
+  outline: none;
+  border: none;
+  min-height: inherit;
+  max-height: inherit;
+  overflow: visible;
+  line-height: 1.15;
+  padding: 0 10px 0 0;
+}
+
+#hero .left-side .main-content .choosing .radio-container {
+  margin-top: 1px;
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: 19px;
+}
+
+#hero .accordion-element input {
+  width: 20px;
+  height: 20px;
+}
+
+#hero .accordion-element input:checked {
+  background-color: var(--main-color);
+  color: var(--main-color);
+}
+
+#hero .accordion-element label {
+  padding-right: 6px;
+  line-height: 18px;
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--color-dark-grayish-brown);
+  font-family: "Readex Pro";
+  margin-top: auto;
+}
+
+#hero .accordion-btn {
+  width: 100%;
+  font-size: 17px;
+  font-weight: 500;
+  outline: none;
+  border: none;
+
+  padding: 10px 12px;
+  border-radius: 8px;
+  background-color: #fff !important;
+  color: var(--color-deep-slate);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#hero .accordion-btn .price {
+  color: var(--color-muted-brown);
+  line-height: 18px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+#hero .accordion-btn span {
+  color: var(--color-muted-brown);
+  text-decoration: line-through;
+  opacity: 0.8;
+  font-size: 16px;
+}
+
+#hero .accordion-btn .acc-title {
+  display: flex;
+}
+
+#hero .accordion-btn .free {
+  padding: 4px 10px;
+  background-color: var(--color-light-gray);
+  width: fit-content;
+  margin-right: 20px;
+  text-align: center;
+  margin-top: auto;
+}
+
+#hero .accordion-btn .free p {
+  font-size: 11px;
+  margin: auto;
+  color: var(--color-dark-grayish-brown);
+}
+
+#hero .accordion-element .color {
+  color: var(--color-deep-green);
+}
+
+#hero .accordion-element select {
+  color: var(--color-deep-green);
+  width: 30%;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+#hero .accordion-element .best-offer {
+  border-radius: 5px;
+  margin-top: -10px;
+  margin-right: 20px;
+  width: 120px;
+  padding: 1px 5px;
+  text-align: center;
+  position: absolute;
+}
+
+#hero .accordion-element .best {
+  background-color: #fdaf28;
+}
+
+#hero .accordion-element .best-offer h6 {
+  font-size: 11px;
+  color: var(--color-white);
+  margin: 5px 0px;
+}
+
+#hero .accordion-body {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+#hero .accordion-body span {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+#hero .choosing .title-box img {
+  margin-right: 8px;
+  width: 40%;
+  height: auto;
+}
+
+#hero .choosing .total-price {
+  border-style: solid;
+  border-color: var(--color-muted-blue);
+  border-width: 0px;
+  align-items: center;
+  border-radius: 10px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-right: 11px;
+  padding-left: 20px;
+  background-color: #eee;
+}
+
+#hero .choosing .total-price img {
+  width: auto;
+  margin-left: 6px;
+  height: 32px;
+}
+
+#hero .choosing .total-price p {
+  line-height: 20px;
+  text-align: left;
+  font-family: "Readex Pro";
+  font-weight: 700;
+  color: var(--color-dark-grayish-brown);
+  font-size: 14px;
+  margin: auto 0;
+}
+
+#hero .choosing .total-price span {
+  font-family: "Readex Pro";
+  line-height: 24px;
+  color: var(--color-muted-brown);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+#hero .choosing .order-now {
+  width: 100%;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.main-description {
+  color: #f0f0f0;
+  text-align: left;
+  font-family: "Readex Pro";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+.main-description-intro {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.main-description-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.main-description-highlight {
+  font-family: "Readex Pro";
+  color: rgba(71, 88, 81, 1);
+  line-height: 160%;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.main-description-subtitle {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 20px 0 10px;
+  color: rgba(71, 88, 81, 1);
+}
+
+.main-description-list {
+  list-style-type: disc;
+  margin: 0 auto 5px;
+  display: inline-block;
+  padding: 0 20px 0 0;
+}
+
+.main-description-list li {
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.main-description-warning {
+  font-size: 18px;
+  font-weight: 700;
+  color: rgba(207, 38, 38, 1);
+  margin: 20px 0;
+}
+
+/* accordion-butn */
+.accordion-element {
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  cursor: pointer;
+  border: 1px dashed #ccc;
+  padding: 0;
+}
+
+#main .left-side div#accordionFlushExample {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#main .left-side .accordion-element {
+  background-color: rgba(9, 106, 61, 0.06);
+  border-radius: 15px;
+}
+
+#main .left-side .accordion-element .accordion-butn {
+  background-color: transparent;
+}
+
+#x-bundles .accordion-element {
+  margin: 5px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1),
+    0 8px 16px rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+#x-bundles .accordion-element .accordion-btn {
+  padding: 17px;
+}
+
+.accordion-element i {
+  color: #000;
+}
+
+.accordion-element .accordion-butn .btn-title {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition-duration: 240ms;
+  padding: 15px 0 15px 0;
+}
+
+.accordion-element .accordion-butn .btn-title .right {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.accordion-element .accordion-butn .btn-title .right img {
+  width: auto;
+  margin-left: 5px;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 0px;
+  padding: 4px;
+  height: 36px;
+}
+
+.accordion-element .accordion-butn .btn-title .right span {
+  color: #fff;
+  text-align: left;
+  font-family: "Readex Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.accordion-butn {
+  border: none;
+  font-size: 16px;
+  padding: 0px;
+  font-family: "Readex Pro";
+}
+
+.accordion-butn .btn-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 992px) {
+  #hero .right-side,
+  #hero .left-side {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #main .left-side div#accordionFlushExample {
+    gap: 5px;
+  }
+
+  #hero .right-side,
+  #hero .left-side {
+    width: 100%;
+  }
+
+  #hero .carousel .carousel-inner .carousel-item img {
+    height: 250px;
+  }
+
+  #hero .left-side .main-content .title h1 {
+    font-size: 24px;
+  }
+
+  #hero .left-side .main-content .discount h4,
+  .discount h4 {
+    font-size: 18px;
+  }
+
+  #hero .left-side .main-content .discount p,
+  .discount p {
+    font-size: 16px;
+  }
+
+  #hero .left-side .main-content .choosing .title-box p,
+  #hero .accordion-btn span {
+    font-size: 13px;
+  }
+
+  #hero .accordion-btn .acc-title {
+    flex-direction: column;
+  }
+
+  #hero .accordion-element label {
+    font-size: 14px;
+    padding: 0;
+  }
+
+  #hero .accordion-btn .free {
+    margin-right: 0;
+  }
+
+  #hero .accordion-btn .price {
+    font-size: 15px;
+  }
+
+  #hero .accordion-element select {
+    width: 50%;
+  }
+
+  #hero .choosing .order-now {
+    font-size: 18px;
+    padding: 8px 10px;
+  }
+
+  #hero .choosing .total-price {
+    margin: 15px 0 15px !important;
+  }
+}
+
+section {
+  overflow: hidden;
+}
+
+.section-title {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.section-title .top span {
+  margin-right: 0px;
+  display: flex;
+  vertical-align: middle;
+  max-width: 100%;
+  margin-left: 6px;
+  font-size: 18px;
+  color: var(--color-yellow-dark);
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 767px) {
+  .section-title {
+    margin-bottom: 20px;
+  }
+}
+
+.services {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(https://files.easy-orders.net/1730815545147228170serv-bg.svg);
+  background-color: #121212;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.services #x-checkout-btn {
+  background-color: #fff;
+  color: #000;
+}
+
+.services .big-main-title {
+  color: #fff;
+}
+
+.services .content .accordion {
+  max-width: 100%;
+  border-style: solid;
+  border-width: 0px;
+  border-radius: 18px;
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+}
+
+.services .content .accordion .accordion-element {
+  max-width: 100%;
+  width: 100%;
+  border-style: solid;
+  overflow: hidden;
+  z-index: 100;
+  border-width: 0px;
+  background-color: transparent;
+  border-bottom: 0.5px solid #cdcdcd;
+  border: 1px dashed #fff;
+}
+
+.services .content .accordion .accordion-element button .btn-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 16px;
+}
+
+.accordion-body {
+  padding: 10px;
+  color: #121212;
+  text-align: left;
+  font-family: "Readex Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  background: #eee;
+}
+
+.services .content .right img {
+  width: auto;
+  margin-left: 10px;
+  background-color: var(--color-yellow-light);
+  border-style: solid;
+  border-width: 0px;
+  height: 40px;
+  border-radius: 12px;
+  padding: 4px;
+}
+
+.services .content .right span {
+  color: var(--color-dark-grayish-brown);
+  line-height: 20px;
+  font-family: "Readex Pro";
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.services .content i {
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-container {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn-container .btn-box {
+  width: 40%;
+  align-items: center;
+  display: flex;
+}
+
+.btn-container .btn-box .btn-r {
+  max-width: 100%;
+  margin-left: 8px;
+  height: 30px;
+  box-sizing: border-box;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  border-style: none;
+  display: block;
+  width: auto;
+  object-fit: cover;
+  position: relative;
+  filter: invert(1);
+}
+
+.btn-container .btn-box .btn-l {
+  max-width: 100%;
+  margin-right: 8px;
+  height: 30px;
+  box-sizing: border-box;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  border-style: none;
+  display: block;
+  width: auto;
+  object-fit: cover;
+  position: relative;
+  filter: invert(1);
+}
+
+.btn-box a {
+  width: 100%;
+  font-size: 14px;
+  font-family: Roboto;
+  font-weight: 400;
+  border-style: solid;
+  border-width: 0px;
+  transition-duration: 0.3s;
+  padding: 18px 13px 17px;
+  border-radius: 14px;
+  background-color: var(--main-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: block;
+  text-decoration: none solid rgb(0, 117, 255);
+  box-sizing: border-box;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  position: relative;
+}
+
+.btn-box a:hover {
+  transform: translateY(-10px);
+}
+
+.btn-box a p {
+  font-family: "Readex Pro";
+  line-height: 22.4px;
+  text-align: center;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  margin-top: 4px;
+  margin-bottom: 0;
+}
+.accordion-flush .accordion-collapse {
+  padding: 5px 15px 15px;
+}
+@media only screen and (max-width: 992px) {
+  .services {
+    padding-bottom: 60px;
+  }
+
+  .services .container {
+    padding: 40px 20px;
+  }
+
+  .services .content .accordion {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+
+  .btn-container {
+    margin-top: 20px;
+  }
+
+  .btn-container .btn-box {
+    width: 70%;
+  }
+
+  .btn-box a {
+    padding: 14px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .accordion-element .accordion-butn .btn-title .right span {
+    font-size: 15px;
+  }
+
+  .accordion-element .accordion-butn .btn-title .right img {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+/* start static-section */
+#static-section div#fixed-price {
+  gap: 10px;
+}
+
+#static-section {
+  padding-bottom: 18px;
+  padding-right: 24px;
+  padding-left: 24px;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  bottom: 0;
+  background: transparent;
+}
+
+#static-section .static {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-style: dashed;
+  border-top-width: 1px;
+  border-bottom-width: 0px;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  background-position: center center;
+  z-index: 600;
+  padding: 18px;
+  border-color: #616161;
+  background: rgba(25, 25, 25, 0.4);
+  box-shadow: -2px -2px 10px 1px rgba(255, 255, 255, 0.1),
+    2px 2px 10px 1px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(7.5px);
+  border-radius: 999px;
+}
+
+#static-section .static .discount h4 {
+  font-size: 24px;
+}
+
+#static-section .static .right .r {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#static-section .static .product-img-static-section {
+  height: 80px;
+  width: 80px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid #959595;
+}
+
+#static-section .static .right .r img {
+  height: 40px;
+  width: auto;
+}
+
+#static-section .static .right .r .details h3 {
+  color: #fff;
+  text-align: left;
+  font-family: "Readex Pro";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+#static-section .static .right .r .details .inline {
+  display: flex;
+  align-items: center;
+}
+
+#static-section .static .right .r .details .inline .span1 {
+  font-family: "Readex Pro";
+  font-weight: 700;
+  font-size: 19px;
+  color: var(--color-muted-brown);
+  margin-left: 8px;
+}
+
+#static-section .static .right .r .details .inline .span2 {
+  text-decoration-line: line-through;
+  font-family: "Readex Pro";
+  color: var(--color-slightly-dark-gray);
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 11px;
+}
+
+#static-section .static .right .r .details .inline .span3 {
+  font-family: "Readex Pro";
+  border-style: solid;
+  border-width: 0px;
+  border-radius: 6px;
+  color: var(--color-yellow-dark);
+  background-color: var(--color-yellow-light);
+  font-weight: 500;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 7px;
+  padding-left: 7px;
+  font-size: 15px;
+}
+
+#static-section .static .left {
+  width: 28%;
+}
+
+#static-section .static .left button {
+  animation-name: pulse;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 1600ms;
+}
+
+#static-section .static .right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#static-section .static .right h5 {
+  font-family: Tajawal;
+  color: rgba(22, 39, 34, 1);
+  font-weight: 600;
+  line-height: 160%;
+  font-size: 19px;
+}
+
+#static-section #x-checkout-btn {
+  width: 100%;
+}
+
+#x-checkout-btn {
+  border: 0;
+  width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+  #static-section {
+    padding: 0;
+  }
+
+  #static-section .static {
+    display: flex;
+    padding: 12px;
+    position: fixed;
+    bottom: 6px;
+    width: 100%;
+    border-radius: 999px;
+  }
+
+  #static-section .static .product-img-static-section {
+    height: 55px;
+    width: 55px;
+  }
+
+  #static-section .static .right .r img {
+    height: 40px;
+    width: auto;
+  }
+
+  #static-section .static .left {
+    width: fit-content;
+  }
+
+  .back-to-top {
+    bottom: 140px;
+    width: 55px;
+    height: 55px;
+  }
+
+  #static-section .static p#basePrice,
+  #static-section .static .discount .percentage {
+    display: none;
+  }
+
+  #static-section .static .right .r .details h3,
+  #static-section .static .discount h4 {
+    font-size: 14px;
+  }
+
+  #static-section #x-checkout-btn {
+    width: fit-content;
+    min-width: unset;
+    padding: 10px 15px;
+  }
+}
+
+/* end static-section */
+
+/*========================== old code  ============================*/
+
+.btn-container .btn-box {
+  width: unset;
+}
+
+#x-checkout-btn {
+  letter-spacing: 0px;
+  border-style: solid;
+  border-width: 0px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-right: 21px;
+  padding-left: 22px;
+  width: fit-content;
+  margin: 0 auto;
+  min-width: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  text-align: center;
+  font-family: "Readex Pro";
+  font-style: normal;
+  font-weight: 500;
+  color: #000;
+  line-height: var(--Prirmitaves-Spacing-3xl, 24px);
+  font-size: 20px;
+  border-radius: var(--Prirmitaves-Radius-pill, 999px);
+  background: #fff;
+}
+
+/*quantity*/
+
+/*quantity*/
+
+/*main carousel*/
+.right-side .carousel .carousel-inner .carousel-item img,
+#hero .carousel .carousel-inner .carousel-item img {
+  height: auto !important;
+  width: 100% !important;
+  object-fit: cover !important;
+  max-height: 90vh !important;
+  border-radius: 0;
+}
+
+.right-side .carousel-indicators li.thumbnail {
+  width: auto !important;
+  height: auto !important;
+}
+
+.right-side .carousel-indicators li img {
+  height: auto;
+  width: 100px;
+  border-radius: 10px;
+}
+
+#main .carousel-indicators {
+  position: static;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 20px 0px 5px 0px;
+  width: 100%;
+  overflow-x: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  scroll-snap-type: x mandatory;
+  padding: 10px 0;
+  gap: 5px;
+}
+
+#hero .carousel-indicators li.thumbnail::marker {
+  display: none;
+}
+
+@media only screen and (min-width: 992px) {
+  #hero .carousel-indicators li img {
+    width: 100%;
+    height: auto;
+    min-width: 120px;
+  }
+}
+
+.accordion-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 767px) {
+  #main .carousel-indicators {
+    gap: 5px !important;
+    padding: 0 0 10px;
+  }
+
+  .right-side .carousel .carousel-inner {
+    display: none !important;
+  }
+
+  .right-side .carousel-indicators li img {
+    width: auto !important;
+    border-radius: 10px;
+    max-width: 84vw !important;
+    aspect-ratio: 1;
+    max-height: 65vh;
+  }
+
+  .right-side .carousel-indicators li.thumbnail {
+    width: 90vw !important;
+    height: auto !important;
+    border-radius: 10px;
+    color: transparent !important;
+  }
+
+  #main .carousel-indicators li.thumbnail {
+    padding: 0;
+  }
+
+  .accordion-element .accordion-header button span {
+    font-size: 16px !important;
+    text-align: left;
+  }
+}
+
+#main .left-side {
+  max-width: 100%;
+  height: fit-content;
+  border-radius: 4px;
+  padding: 0 20px;
+}
+
+.main-discount {
+  display: flex;
+  align-items: center;
+  border-style: solid;
+  border-width: 0px;
+  border-radius: 30px;
+  box-shadow: 0px 1px 3px 0px rgba(85, 55, 48, 0.17);
+  font-family: Nunito;
+  padding: 6px 10px 3px 10px;
+  justify-content: center;
+  gap: 5px;
+  font-style: italic;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  background-color: #231f1d;
+  font-size: 16px;
+}
+
+.percentage.main-discount.flash-icon {
+  position: relative;
+}
+
+.percentage.main-discount.flash-icon::before {
+  content: "OFF";
+  display: block;
+  order: 2;
+}
+
+.txt-rating-box p {
+  color: #494949;
+  text-align: left;
+  font-family: "Readex Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+#hero .left-side .main-content .rating-box .photo img {
+  border-style: solid;
+  border-width: 0px;
+  border-radius: 50%;
+  height: 34px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 34px;
+  margin-right: -9px;
+}
+
+#hero .left-side .main-content .rating-box .photo img:first-child {
+  margin-right: 0;
+}
+
+@media (max-width: 767px) {
+  #main .left-side {
+    padding: 5px 0 20px 0;
+  }
+
+  #hero .middle {
+    padding: 0 10px 0;
+  }
+
+  .txt-rating-box p {
+    font-size: 11px;
+  }
+}
+
+p#basePrice {
+  text-decoration: line-through;
+}
+
+.carousel .carousel-inner .carousel-item {
+  height: auto;
+  background-color: #bdd03d;
+  overflow: hidden;
+  max-height: 90vh !important;
+}
+
+.carousel-indicators .thumbnail {
+  scroll-snap-align: center;
+  background-color: transparent;
+}
+
+/*main carousel*/
+
+#hero {
+  overflow: visible;
+}
+
+.carousel .carousel-inner .carousel-item {
+  background-color: transparent !important;
+}
+
+/*header tst*/
+@media (max-width: 992px) {
+  .navbar-collapse {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100%;
+    width: 250px;
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+    transition: left 0.3s ease-in-out;
+    z-index: 1000;
+  }
+
+  .navbar-collapse::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    background-image: url("https://files.easy-orders.net/1748522274050285495.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  #navbarSupportedContent > ul {
+    padding: 0;
+    margin: 0 !important;
+  }
+
+  .head-btn {
+    width: 83%;
+  }
+
+  #navbarSupportedContent > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+  }
+
+  #main .carousel-indicators li img {
+    height: 100%;
+    width: 100px;
+    object-fit: cover;
+  }
+
+  #hero {
+    overflow: hidden;
+  }
+}
+
+#sliderContainer {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: fit-content;
+  border-style: solid;
+  border-width: 0px;
+  background-position: center center;
+  border-radius: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px 10px;
+  background: #161616;
+  color: #fff;
+  font-family: "Readex Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+#sliderContainer .countdown {
+  gap: 5px;
+  font-size: 14px;
+}
+
+#sliderContainer .countdown.d-flex .countdown-item {
+  gap: 4px;
+  display: flex;
+}
+
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+    /* ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬ ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Âµ ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦ ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¯ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â£ ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬  ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â£ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â³ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€šÃ‚ÂÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ */
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    /* ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬ ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Âµ ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦ ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚ÂµÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¥ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â° ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬ ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¡ ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â·ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦ ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¹ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦  */
+  }
+}
+
+/* ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¹ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬ ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¯ ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚ÂªÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚ÂºÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦ ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦ ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â± ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬ ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Âµ */
+.change-text {
+  animation: fadeInText 0.5s forwards;
+}
+
+i.las.la-plane {
+  color: rgba(0, 178, 189, 1);
+  font-size: 21px;
+}
+
+@keyframes flash {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  70% {
+    opacity: 1;
+  }
+}
+
+.flash-icon {
+  animation: flash 1.5s infinite;
+  /* ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚ÂªÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â·ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦ ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â­ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â±ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â© */
+
+  margin-right: 5px;
+  /* ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â³ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€šÃ‚ÂÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â© ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦ ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬  ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦ ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬ ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬ ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â© ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬ ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬ ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Âµ */
+}
+
+/*==================     end customer-deal-slider        =========================================*/
+
+/*==================     footer-card     =========================================*/
+section#footer-card {
+  text-align: center;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 30px 0 160px 0;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+  section#footer-card {
+    margin: 30px 0 100px 0;
+  }
+}
+
+/*==================     end footer-card     =========================================*/
+
+.in-product-quantity-counter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px;
+  background-color: #ffb9a7;
+  border-radius: 20px;
+  margin: 10px 0;
+}
+
+.shipping_cost_container {
+  background-color: #fe4c1575;
+  padding: 5px 10px;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quantity_container.mt-2.flex {
+  margin: 0 !important;
+  padding: 5px 9px !important;
+  background-color: #eee;
+  border-radius: 15px;
+}
+
+.container-bolt-customer-deal-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-color: rgba(171, 179, 173, 1);
+  background-color: rgba(9, 106, 61, 0.06);
+  border-radius: 80px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-right: 18px;
+  padding-left: 18px;
+  width: fit-content;
+}
+
+.container-bolt-customer-deal-left i {
+  font-size: 28px;
+}
+
+/*==================    big-main-title     =========================================*/
+@media (max-width: 767px) {
+  .big-main-title,
+  .fire-customer-deal-left {
+    font-size: 24px;
+  }
+}
+
+/*==================     end big-main-title    =========================================*/
+
+/*==================     end big-main-title    =========================================*/
+.navbar-toggler {
+  padding: 2px 5px;
+  line-height: normal;
+  color: inherit;
+  background-color: initial;
+  border: none;
+  border-radius: 0;
+  transition: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-toggler-icon {
+  width: 25px;
+  height: 25px;
+  filter: invert(1);
+}
+
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: none;
+  box-shadow: 0 0 5px 2px #333333;
+  border: 2px solid #1d1d1d;
+  color: #333333;
+  border-radius: 5px;
+}
+
+/*==================     end big-main-title    =========================================*/
+
+/*--------------------------------------------------------------
+# footer
+--------------------------------------------------------------*/
+#footer {
+  padding: 80px 80px 200px;
+  background: #202020;
+}
+
+#footer i {
+  color: #fff;
+}
+
+#footer .content {
+  display: flex;
+  flex-direction: column;
+}
+
+#footer .content .top .item {
+  display: flex;
+  flex-direction: column;
+}
+
+#footer .content .top .item h3 {
+  font-family: "Readex Pro";
+  line-height: 160%;
+  letter-spacing: 0px;
+  color: rgba(72, 59, 54, 1);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#footer .content .top .item p,
+#footer .content .top .item ul {
+  font-family: "Readex Pro";
+  line-height: 160%;
+  font-weight: 400;
+  color: rgba(82, 68, 58, 0.81);
+  font-size: 15px;
+  padding: 0;
+}
+
+#footer .content .top .item ul {
+  list-style: none;
+}
+
+#footer .content .top .item ul li {
+  padding-bottom: 7px;
+  color: #483b36;
+}
+
+#footer .content .top .item ul li a {
+  color: var(--Prirmitaves-Colors-Base-White, #fff);
+  text-align: center;
+  font-family: "Readex Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.footer-content,
+.footer-content a {
+  color: var(--Prirmitaves-Colors-Base-White, #fff);
+  text-align: center;
+  font-family: "Readex Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.social-icons.d-flex i {
+  color: #fff;
+}
+
+#footer .content .top .item .social-icons i {
+  font-size: 22px;
+  font-weight: bolder;
+  margin-left: 20px;
+  display: block;
+  color: #000;
+}
+
+#footer .content .top .item input {
+  font-size: 14px;
+  border-width: 1px;
+  border-style: solid;
+  color: rgba(72, 59, 54, 1);
+  line-height: 18px;
+  font-family: "Readex Pro";
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-right: 16px;
+  padding-left: 16px;
+  border-color: rgba(214, 220, 233, 1);
+  border-radius: 10px;
+  width: 100%;
+}
+
+#footer .content .top .item input:focus {
+  border: 2px solid var(--main-color);
+  outline: none;
+}
+
+#footer .content .top .item button {
+  margin-top: 10px;
+  font-family: "Readex Pro";
+  font-weight: 500;
+  letter-spacing: 0px;
+  line-height: 18px;
+  color: rgba(255, 255, 255, 1);
+  border-color: rgba(255, 255, 255, 1);
+  background-color: rgba(72, 59, 54, 1);
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-right: 24px;
+  padding-left: 24px;
+  font-size: 15px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+#footer .content .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+#footer .content .bottom .item img {
+  height: 26px;
+  float: left;
+}
+
+#footer .content .top .item ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.social-icons.d-flex {
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.social-icons.d-flex ::before {
+  width: 24px;
+  font-size: 33px;
+}
+
+.social-icons.d-flex img {
+  width: 35px;
+}
+
+.social-icons.d-flex h1 {
+  color: var(--Prirmitaves-Colors-Base-White, #fff);
+  text-align: center;
+  font-family: "Noto Kufi Arabic";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.logo-footer {
+  margin: 0px 0 35px;
+  color: var(--Prirmitaves-Colors-Base-White, #fff);
+  text-align: center;
+  font-family: "Readex Pro";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+}
+
+@media only screen and (max-width: 992px) {
+  #footer .content .top .item h3,
+  #footer .content .top .item .social-icons i {
+    font-weight: 600;
+  }
+
+  #footer .content .top .item .social-icons i {
+    font-size: 18px;
+  }
+
+  #footer .content .top .item {
+    margin-top: 10px;
+  }
+
+  #footer .content .bottom {
+    padding: 30px 0px 60px;
+  }
+
+  #footer .content .bottom .item img {
+    float: initial;
+    margin: auto;
+  }
+
+  #footer .content .top .item ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #footer {
+    padding: 50px 10px 140px;
+  }
+
+  #footer .content .top .item ul li a {
+    font-size: 18px;
+  }
+
+  .logo-footer {
+    margin: 0px 0 30px;
+  }
+
+  .social-icons.d-flex h1 {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .social-icons.d-flex {
+    flex-wrap: wrap;
+  }
+}
+
+/*--------------------------------------------------------------
+# footer
+--------------------------------------------------------------*/
+
+.total_price_container {
+  margin: 0 !important;
+}
+
+@media (max-width: 768px) {
+  #x-checkout-btn {
+    padding: 12px 10px;
+  }
+}
+
+/*====================  prices ====================*/
+
+.total_price_container {
+  margin: 0 !important;
+}
+
+@media (max-width: 768px) {
+  #x-checkout-btn {
+    padding: 12px 10px;
+  }
+}
+
+/*==================== end prices ====================*/
+
+/*==================== #beats-section ====================*/
+#beats-section {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.25) 0%,
+      rgba(0, 0, 0, 0.25) 100%
+    ),
+    url("https://asset.gecdesigns.com/img/background-templates/abstract-navy-red-background-design-sr17012401-1705501852665-cover.webp") lightgray 50% /
+      cover no-repeat;
+  min-height: 90vh;
+}
+
+.first-beats-section {
+  color: #fff;
+  font-family: "Readex Pro";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  text-align: center;
+}
+
+.second-beats-section {
+  color: #fff;
+  font-family: "Readex Pro";
+  font-size: 104px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 115.385%;
+  text-align: center;
+}
+
+#beats-section #x-checkout-btn {
+  min-width: 185px;
+}
+
+@media (max-width: 992px) {
+  .first-beats-section {
+    font-size: 20px;
+  }
+
+  .second-beats-section {
+    font-size: 45px;
+  }
+
+  #beats-section {
+    min-height: 40vh;
+    height: 40vh;
+  }
+}
+
+/*==================== end #beats-section ====================*/
+
+.quantity_btn {
+  margin: 0 !important;
+}
+
+/*--------------------------------------------------------------
+# #main-details
+--------------------------------------------------------------*/
+
+section#main-details {
+  position: relative;
+  width: 100%;
+  background: #121212;
+  color: var(--Prirmitaves-Colors-Base-White, #fff);
+  text-align: center;
+  font-family: "Readex Pro";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 140% */
+}
+
+#main-details .col {
+  border: 1px solid #fff;
+  /* padding: 22px; */
+  transition: all 0.3sease-in-out;
+  scroll-snap-align: center;
+  border-bottom: 0;
+  border-top: 0;
+}
+#main-details .big-img-container-main-details {
+  max-height: 600px;
+}
+#main-details .all-cards-mini-store-featurres {
+  scroll-snap-type: x mandatory;
+}
+
+#main-details .all-cards-mini-store-featurres::-webkit-scrollbar {
+  height: 0px;
+}
+
+#main-details .all-cards-mini-store-featurres::-webkit-scrollbar-thumb {
+  background-color: #c63830;
+}
+
+#main-details .card-feature img {
+  width: 64px;
+  height: auto;
+}
+
+#main-details .feature-img {
+  width: 64px;
+}
+
+#main-details .feature-title {
+  color: var(--Prirmitaves-Colors-Base-White, #fff);
+  text-align: center;
+  font-family: "Readex Pro";
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px; /* 140% */
+}
+
+@media (max-width: 992px) {
+  section#main-details .row-cols-1 > * {
+    max-width: 70%;
+  }
+}
+
+@media (max-width: 992px) {
+  #main-details .card-feature {
+    padding: 20px;
+  }
+
+  #main-details .card-feature img {
+    width: 50px;
+  }
+}
+
+/*--------------------------------------------------------------
+# end #main-details
+--------------------------------------------------------------*/
+
+/*==================== main-product-features ====================*/
+#main-product-features {
+  background: #121212;
+}
+#main-product-features h1 {
+  color: #fff;
+  text-align: center;
+  font-family: "Readex Pro";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+}
+#main-product-features img {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 992px) {
+  #main-product-features h1 {
+    font-size: 25px;
+  }
+}
+/*==================== end main-product-features ====================*/
+
+/*--------------------------------------------------------------
+# mini-imgs-section
+--------------------------------------------------------------*/
+#mini-imgs-section .text-mini-imgs-section {
+  color: #060201;
+  font-family: "Readex Pro";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  text-align: center;
+}
+
+#mini-imgs-section .image-container-mini-imgs-section img {
+  width: 100%;
+  height: auto;
+  max-height: 100vh;
+  object-fit: cover;
+}
+
+/*--------------------------------------------------------------
+#end mini-imgs-section
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+#section#brands-images
+--------------------------------------------------------------*/
+section#brands-images img {
+  height: 30px;
+  max-width: 100%;
+  width: auto;
+}
+
+section#brands-images {
+  background: #202020;
+}
+
+.brands-slider {
+  display: flex;
+  position: relative;
+}
+
+.brands-slider > div {
+  flex: 0 0 auto;
+  color: #fff;
+  text-align: center;
+  font-family: "Readex Pro";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.brands-slider {
+  display: flex;
+  animation: slide-loop 15s linear infinite;
+}
+
+.brands-slider > div {
+  animation: none;
+}
+
+section#brands-images img {
+  height: 22px;
+}
+
+@keyframes slide-loop {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/*--------------------------------------------------------------
+#end section#brands-images
+--------------------------------------------------------------*/
+
+/*==================== some-product-features ====================*/
+section#some-product-features {
+  background: #202020;
+}
+section#some-product-features #x-checkout-btn {
+  margin: 0;
+  min-width: 200px;
+}
+
+section#some-product-features .title-some-product-features {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+section#some-product-features
+  .title-some-product-features
+  .circeled-main-title {
+  font-family: Quicksand;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: rgba(0, 170, 99, 1);
+  text-align: center;
+}
+
+section#some-product-features .all-cards-product-features {
+  overflow: hidden;
+  margin: 25px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+section#some-product-features .card1-product-features {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-color: rgba(40, 58, 50, 0.08);
+}
+
+section#some-product-features .card1-product-features div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+}
+
+section#some-product-features .card1-product-features img {
+  width: 100%;
+  max-height: 650px;
+  height: auto;
+  border-radius: 0;
+}
+
+section#some-product-features .big-title-card1-product-features {
+  color: #fff;
+  text-align: left;
+  font-family: "Readex Pro";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+}
+
+section#some-product-features .small-title-card1-product-features {
+  color: #ededed;
+  text-align: left;
+  font-family: "Readex Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 180%;
+}
+
+/* .card1-product-features:nth-of-type(2),
+.card1-product-features:nth-of-type(4),
+.card1-product-features:nth-of-type(6),
+.card1-product-features:nth-of-type(8) {
+    direction: ltr;
+} */
+
+section#some-product-features .left-card1-product-features {
+  gap: 15px;
+  padding: 25px 0;
+  width: 90%;
+}
+
+@media (max-width: 992px) {
+  section#some-product-features .card1-product-features {
+    flex-wrap: wrap;
+  }
+
+  section#some-product-features .card1-product-features div {
+    flex: unset;
+    width: 100%;
+    gap: 14px;
+    align-items: center;
+  }
+
+  section#some-product-features .big-title-card1-product-features {
+    font-size: 20px;
+  }
+
+  section#some-product-features .small-title-card1-product-features {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  section#some-product-features .all-cards-product-features {
+    gap: 32px;
+  }
+}
+
+@media (max-width: 992px) {
+  section#some-product-features .big-main-title,
+  section#some-product-features .fire-customer-deal-left {
+    font-size: 24px;
+  }
+
+  section#some-product-features .small-main-title {
+    font-size: 15px;
+  }
+}
+
+/*==================== end some-product-features ====================*/
+
+/*--------------------------------------------------------------
+# two-product-features
+--------------------------------------------------------------*/
+#two-product-features {
+  background: #121212;
+}
+#two-product-features .card-two-product-features {
+  overflow: hidden;
+}
+#two-product-features h1 {
+  color: #fff;
+  text-align: left;
+  font-family: "Readex Pro";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+}
+#two-product-features h2 {
+  color: #ededed;
+  text-align: left;
+  font-family: "Readex Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 162.5%;
+}
+#two-product-features #x-checkout-btn {
+  margin: 0;
+  min-width: 200px;
+}
+
+.footer-two-product-features {
+  border: 1px solid #fff;
+  border-top: 0;
+}
+@media (max-width: 992px) {
+  #two-product-features h1 {
+    font-size: 32px;
+  }
+  #two-product-features h2 {
+    font-size: 16px;
+  }
+}
+/*--------------------------------------------------------------
+# end two-product-features
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# banner-end
+--------------------------------------------------------------*/
+#banner-end {
+  background: url("https://files.easy-orders.net/1748788571394359764.png")
+    lightgray 50% / cover no-repeat;
+  min-height: 85vh;
+}
+#banner-end h1 {
+  color: #fff;
+  text-align: left;
+  font-family: "Readex Pro";
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 121.429%;
+}
+#banner-end h2 {
+  color: #ededed;
+  text-align: left;
+  font-family: "Readex Pro";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+@media (max-width: 992px) {
+  #banner-end {
+    min-height: 30vh;
+  }
+  #banner-end h1 {
+    font-size: 20px;
+  }
+  #banner-end h2 {
+    font-size: 12px;
+  }
+}
+/*--------------------------------------------------------------
+# end banner-end
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# small-imgs-section
+--------------------------------------------------------------*/
+#small-imgs-section {
+  background: #121212;
+}
+#small-imgs-section img {
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+#small-imgs-section h2 {
+  color: #fff;
+  text-align: center;
+  font-family: "Readex Pro";
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 121.429%;
+}
+@media (max-width: 992px) {
+  #small-imgs-section h2 {
+    font-size: 33px;
+  }
+}
+/*--------------------------------------------------------------
+# end small-imgs-section
+--------------------------------------------------------------*/
+/*==================    main-reviews1    =========================================*/
+
+section#main-reviews1 .big-main-title {
+  color: #fff;
+  text-align: center;
+  font-family: "Readex Pro";
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+section#main-reviews1 {
+  background-color: #121212;
+}
+
+.stars-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stars i {
+  color: #ffa726;
+  margin-right: 2px;
+}
+
+.rating-score {
+  text-align: left;
+}
+
+.rating-score small {
+  color: var(--Prirmitaves-Colors-Greys-100, #e5e5e5);
+  text-align: center;
+  font-family: "Readex Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+}
+
+.rating-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.rating-row span {
+  color: var(--Prirmitaves-Colors-Greys-100, #e5e5e5);
+  font-family: "Readex Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.rating-bar {
+  height: 10px;
+  flex: 1;
+  margin: 0 10px;
+  border-radius: 5px;
+  background: #f5f5f1;
+  min-width: 120px;
+  height: 20px;
+  max-width: 120px;
+}
+
+.rating-bar.wardi {
+  background: #eb451a;
+}
+
+.stars-summary span {
+  color: var(--Prirmitaves-Colors-Base-White, #fff);
+  text-align: left;
+  font-family: "Readex Pro";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+#main-reviews1 .review-card {
+  border-bottom: 1px solid var(--Prirmitaves-Colors-Greys-100, #e5e5e5);
+  padding-bottom: 16px;
+}
+
+#main-reviews1 .review-details {
+  text-align: center;
+}
+
+#main-reviews1 .review-stars {
+  font-size: 18px;
+}
+
+#main-reviews1 .review-name {
+  color: var(--Prirmitaves-Colors-Base-White, #fff);
+  font-family: "Readex Pro";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+#main-reviews1 .review-status {
+  color: var(--Prirmitaves-Colors-Greys-100, #e5e5e5);
+  font-family: "Readex Pro";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2857;
+}
+
+#main-reviews1 .review-date {
+  color: var(--Prirmitaves-Colors-Greys-50, #f2f2f2);
+  font-family: "Readex Pro";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.125;
+}
+
+#main-reviews1 .review-comment {
+  text-align: left;
+  max-width: 60%;
+}
+
+#main-reviews1 .review-title {
+  color: var(--Prirmitaves-Colors-Base-White, #fff);
+  font-family: "Readex Pro";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+#main-reviews1 .review-text {
+  color: var(--Prirmitaves-Colors-Base-White, #fff);
+  font-family: "Readex Pro";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+#main-reviews1 .review-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Main Reviews Section */
+.main-reviews1-section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+/* Titles */
+.main-reviews1-titles {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.main-reviews1-title {
+  color: var(--Prirmitaves-Colors-Base-White, #fff);
+  font-family: "Readex Pro";
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Rating Summary */
+.main-reviews1-summary {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-reviews1-stars-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-reviews1-rating {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--Prirmitaves-Colors-Base-White, #fff);
+}
+
+.main-reviews1-rating-stars i {
+  color: #f17b02;
+  font-size: 22px;
+}
+
+/* Rating Score */
+.main-reviews1-rating-score {
+  font-size: 14px;
+  color: var(--Prirmitaves-Colors-Greys-100, #e5e5e5);
+}
+
+.main-reviews1-details .main-reviews1-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.main-reviews1-row-stars i {
+  color: var(--Prirmitaves-Colors-Greys-200, #ccc);
+}
+
+.main-reviews1-bar-count {
+  font-size: 14px;
+  color: var(--Prirmitaves-Colors-Greys-100, #e5e5e5);
+}
+
+/* Reviews */
+.main-reviews1-reviews {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-reviews1-review-card {
+  gap: 2rem;
+  border-bottom: 1px solid #bcb5ae;
+}
+
+.main-reviews1-review-details {
+  display: flex;
+  align-items: center;
+}
+
+.main-reviews1-review-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.main-reviews1-stars-summary .main-reviews1-review-stars i {
+  color: #f17b02;
+  font-size: 22px;
+}
+.main-reviews1-review-stars i {
+  color: #f17b02;
+  font-size: 18px;
+}
+
+.main-reviews1-review-name {
+  color: var(--Prirmitaves-Colors-Base-White, #fff);
+  text-align: center;
+  font-family: "Readex Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 125%;
+}
+
+.main-reviews1-review-status {
+  color: #e5e5e5;
+  text-align: center;
+  font-family: "Readex Pro";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 133.333%;
+}
+
+.main-reviews1-review-date {
+  color: #e5e5e5;
+  text-align: center;
+  font-family: "Readex Pro";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 133.333%;
+}
+
+/* Review Comments */
+.main-reviews1-review-comment {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.main-reviews1-review-title {
+  color: var(--Prirmitaves-Colors-Base-White, #fff);
+  text-align: left;
+  font-family: "Readex Pro";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 111.111%;
+}
+
+.main-reviews1-review-text {
+  color: var(--Prirmitaves-Colors-Base-White, #fff);
+  text-align: left;
+  font-family: "Readex Pro";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+
+/* Review Images */
+.main-reviews1-review-image img {
+  height: 110px;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+
+@media (max-width: 992px) {
+  section#main-reviews1 .big-main-title {
+    font-size: 40px;
+  }
+
+  section#main-reviews1 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .main-reviews1-review-image img {
+    height: 80px;
+  }
+}
+
+/*==================     end main-reviews1    =========================================*/
